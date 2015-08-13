@@ -15,7 +15,7 @@
 			bottom: 8px;
 			right: 8px;
 			border-radius: 8px 8px 0 8px;
-			background-color: #fff;
+			background-color: #000;
 		}
 		.spa-slider {
 			position: absolute;			
@@ -28,7 +28,27 @@
 			background-color: #f00;
 		}
 	</style>
-	<script type="text/javascript"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		var spa = (function ($) {
+			var configMap = {
+				extended_height: 434,
+				extended_title: 'click to retract',
+				retracted_height: 16,
+				retracted_title: 'clik to extend',
+				template_html: '<div class="spa-slider"><\/div>'
+			},
+			$chatSlider,
+			toggleSlider, onClickSlider, initModule;
+
+			toggleSlider = function () {
+				var slider_height = $chatSlider.height();
+				if(slider_height == configMap.retracted_height) {
+					$chatSlider.
+				}
+			}
+		});
+	</script>
 </head>
 <body>
 	<div id="spa">
